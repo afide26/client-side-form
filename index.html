@@ -15,8 +15,12 @@
   <title>Client Side Form</title>
 </head>
 
-<body class="bg-light">
-  <div class="container">
+<body class="bg-default">
+  <div id="message-modal">
+    <i class="fa fa-close left-close"></i>
+    <div id="modal-content"></div>
+  </div>
+  <div class="container form-container">
     <h2 class="text-center">Client Side Form</h2>
     <form id="saveForm">
       <div class="form-group">
@@ -27,19 +31,23 @@
         <label for="address">Address:</label>
         <input type="text" name="address" placeholder="Enter full address here..." class="form-control">
       </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" name="age" class="form-control">
+      </div>
       <div class="input-group py-3">
         <div class="input-group-prepend">
-          <label class="input-group-text" for="pets">Pets</label>
+          <label class="input-group-text" for="pets">Pets?</label>
           <div class="input-group-text">
             <input type="checkbox" name="pets" id="petCheckbox" aria-label="Checkbox for following text input">
           </div>
         </div>
       </div>
       <div class="input-group">
-        <div class="input-group-prepend">
+        <div class="input-group-prepend petSelection">
           <label class="input-group-text" for="pet">Options</label>
         </div>
-        <select class="custom-select" name="pet" id="petSelection">
+        <select class="custom-select petSelection" name="pet">
           <option selected>Choose...</option>
           <option value="dog">Dog</option>
           <option value="cat">Cat</option>

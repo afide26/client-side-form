@@ -17,13 +17,56 @@ html {
 body {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+.container {
   padding: 50px;
+}
+
+#message-modal {
+  display: none;
+}
+
+#modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  min-height: 200px;
+  min-width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width:978px) {
+  #modal-content {
+    min-width: 45%;
+  }
+}
+
+.left-close {
+  align-self: flex-end;
+  margin: 10px 20px 0 0;
+  color: white;
+  font-size: 2rem;
+  background: red;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .text-center {
   font-weight: normal;
   letter-spacing: 1px;
   text-align: center;
+}
+
+.petSelection {
+  display: none;
 }
 
 .submit-button {
