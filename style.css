@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+button[type="submit"] {
+  outline: none;
+}
+
 html {
   height: 100vh;
   font-size: 16px;
@@ -20,4 +24,12 @@ body {
   font-weight: normal;
   letter-spacing: 1px;
   text-align: center;
+}
+
+.submit-button {
+  margin-top: 20px;
+}
+
+input[type="submit"] {
+  font-family: 'FontAwesome'
 }
